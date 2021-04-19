@@ -1,0 +1,334 @@
+:root{
+    --bg-color:#2b293c;
+    --txt-color:#c4c2d5;    
+    --sec-color:#6c6797;
+    --third-color:#403d5b;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(135deg, var(--sec-color) 0%, var(--bg-color) 100%);
+    color:var(--txt-color);
+}
+.head-wrap{
+    display:flex;
+    justify-content:flex-start;
+    margin-left:0;
+}
+.head-bg{
+    background-color: var(--bg-color);
+    background-image:url(../img/005-genetic.webp);
+    color:var(--txt-color);
+    height:11vh;
+}
+a.navbar-brand{
+    padding: 1rem 1rem 1rem 0;
+    font-weight:700;
+    font-size:1.4rem;
+}
+a.nav-link{
+    padding:1rem;
+    font-weight:400;
+}
+.headerflex{
+    display:flex;
+}
+.mainH1{
+    display:flex;
+    margin-right:auto;
+    margin-left:auto;
+    justify-content: center;
+    color:var(--txt-color);
+    font-weight: 900;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:3rem;
+    padding-bottom:1rem;
+    
+}
+.mainH1 img{
+    margin-right:1rem;
+    width:70px;
+    filter:invert(80%);
+}
+@media(max-width:768px){
+    div#hideShow{
+        margin-right:1rem;
+    }
+}
+#shtxt:hover, div#hideShow:hover{
+    filter:brightness(80%);
+    cursor:pointer;
+}
+.hideShow{
+    margin:-4.5rem 3rem 1.5rem auto;
+    text-align:right;
+    width:fit-content;
+}
+.hideShow img{
+    width:35px;
+}
+.hideShow span{
+    font-size:2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px var(--bg-color);
+}
+@media(max-width:530px){
+  
+    h1{
+        padding-left:1rem;
+        text-align:left;
+    }
+}
+@media(max-width:430px){
+    div#hideShow.hideShow{
+        filter:brightness(70%);
+    }
+    #shtxt{
+        font-size:1.8rem;
+    }
+}
+@media(max-width:365px){
+    div#hideShow.hideShow{
+        margin-right:.5rem;
+    }
+}
+
+
+
+.myContainer{
+    margin-top:1.5rem;
+    display: flex;
+    height:fit-content;
+}
+
+#list{
+    width:69%;
+    margin:1rem;
+}
+#pendingTasks{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    grid-gap:1rem;
+    width:100%;
+}
+#details{
+    margin-top:1rem;
+    width:30%;
+    background-color: var(--sec-color);
+    padding:1rem;
+    margin-right:1rem;
+    height:fit-content;
+    border-radius:10px;
+}
+@media(max-width:768px){
+    #pendingTasks{
+        display:block;
+        width:100%;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+    .task-item{
+        margin:1rem 0;
+        width:100%;
+        padding:1rem;
+        
+    }
+    #list{
+        width:100%;
+        order:2;
+        margin:0;
+    }
+    #details{
+        min-width:80%;
+        order:1;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top:0;
+        background-color:inherit;
+        padding:0;
+        border:none;
+        
+    }
+    .myContainer{
+        flex-direction:column;
+        height:100%;
+    }
+}
+.task-item{
+    width:1fr;
+    padding:1rem;
+    background-color:var(--bg-color);
+    color:var(--txt-color);
+    border-radius:10px;
+    min-height:80px;
+    height:fit-content;
+
+}
+.extraWrap{
+    display:flex;
+}
+.itemHeader{
+    display:flex;
+    justify-content: space-between;
+    flex:1;
+}
+.taskh5 h5{
+    flex:1;
+    font-size:2rem;
+}
+.itemDate{
+    text-align:right;
+    font-size:1.5rem;
+    margin-right:1rem;
+    margin-top:-.5rem;
+}
+.itemAlert{
+    font-size:1.8rem;
+}
+.taskIcon{
+    display:flex;
+    text-align: right;
+    margin-left:auto;
+    margin-right:0;
+    font-size:25px;
+    cursor: pointer;
+    letter-spacing:.5rem;
+    color:var(--sec-color);
+}
+
+.iconAlertWrap{
+    display:flex;
+    justify-content: space-between;
+}
+.itemLoc{
+    display:none;
+    font-size:1.5rem;
+    padding:1rem;
+}
+.taskDesc{
+    display:none;
+    padding:1rem;
+    margin-right:1.5rem;
+
+}
+div.iconExpand{
+    text-align:right;
+}
+.iconExpand i{
+    flex:0;
+    text-align: right;
+    font-size:25px;
+    cursor: pointer;
+    color:var(--txt-color);
+}
+
+
+.unimportant{
+    border:5px solid var(--third-color);
+}
+.important{
+    border:5px solid #cd7e9c;
+}
+
+
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+
+    label .coc-block-label{
+    display: block;
+}
+    input .coc-input{
+    border: 1px solid #c4c4c4;
+    background-color: #fff;  
+    width: 95px;
+    }
+
+    .coc-block-row {
+    width: 100%;
+}
+.coc-block {
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+.coc-block-label {
+    font-family: Verdana;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.coc-input {
+    font-family: Calibri;
+    height: 20px;
+    font-size: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 1px solid #999;
+}
+.coc-form {
+    padding-top: 5px;
+    padding-left: 8px;
+}
+
+#btnSave{
+    background-color:var(--txt-color);
+    width:100%;
+    font-size:1.5rem;
+}
+.btnSaveUnimp{
+    color:var(--bg-color);
+}
+#btnSave:hover{
+    background-color: var(--bg-color);
+    color:var(--txt-color);
+}
+.btnSaveImp{
+    color:#cd7e9c;
+}
+#txtDescription{
+    margin-bottom:1rem;
+    height:6rem;
+}
+#msgFail{
+    display:none;
+}
+
+.inputFail{
+    background-color:rgb(255, 146, 146);
+
+}
+
+
+.importantToggle{
+    display:flex;
+    justify-content: space-between;
+}
+
+.spinner {
+    transform-box: fill-box;
+    animation: spin 2s linear infinite;
+    transform-origin:50% 50%;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% {  transform: rotate(359deg); }
+}
+.border-fix{
+    border-top:none;
+}

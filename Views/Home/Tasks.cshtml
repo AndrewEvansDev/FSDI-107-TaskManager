@@ -1,0 +1,86 @@
+@{
+    ViewData["Title"] = "Tasks";
+}
+<div class="myContainer">
+
+
+        <section id="list">
+            <div id="pendingTasks">
+            </div>
+        </section>
+
+        <section class="unimportant" id="details">
+            <div class="radio-wrap">
+            <h4>Priority Level</h4>
+            <div class="radioFlex">
+                <label class="radio radio-before">
+                    <span class="radio__input">
+                        <input type="radio" name="importance" id="important" value="true">
+                        <span class="radio__control"></span>
+                    </span>
+                    <span class="radio__label">High</span>
+                </label>
+
+                <label class="radio radio-before">
+                    <span class="radio__input">
+                        <input type="radio" name="importance" id="notImportant" value="false">
+                        <span class="radio__control"></span>
+                    </span>
+                    <span class="radio__label">Low</span>
+                </label>
+            </div>
+            </div>
+            <div class="picker">
+                <div class="form-group m-1">
+                    <!-- Input field along with 
+                        calendar icon and -->
+                    <div class="input-group date">
+                        <!-- Sets the calendar icon -->
+                        <span class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i id="cal" class="far fa-calendar-alt" onclick="setDatepicker(this)"></i>
+                            </span>
+                        </span>
+                        <!-- Accepts the input from calendar -->
+                        <input class="calinput form-control" type="text" placeholder="Assign due date" name="txtDueDate"
+                            id="txtDueDate">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" id="txtTitle" class="form-control" placeholder="Task name">
+                <label for="floatingInput">Task name</label>
+            </div>
+
+            <div class="form-floating">
+                <textArea id="txtDescription" placeholder="Task description" class="form-control"></textArea>
+                <label for="floatingTextarea">Enter task description.</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" id="txtLocation" class="form-control" placeholder="Task location">
+                <label for="floatingInput">Task location</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" id="txtAlert" class="form-control" placeholder="Alert message">
+                <label for="floatingInput">Alert message</label>
+            </div>
+            
+            <div class="status">
+                <select name="selStatus" id="selStatus"></select>
+                <option value="1">Not done</option>
+                <option value="2">Pending</option>
+                <option value="3">In Progress</option>
+                <option value="4">Complete</option>
+            </div>
+
+
+            <button id="btnSave" class="btn btnSaveUnimp">Save <i class="far fa-check-circle"></i></button>
+
+            <div class="alert alert-danger" role="alert" id="msgFail">
+                Something is wrong with the form and it cannot be submitted.
+            </div>
+        </section>
+    </div>

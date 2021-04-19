@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Contact";
+}
+<h1>@ViewData["Title"]</h1>
+
+<section class="contactWrap">
+<div class="flexo">
+<label for="contactName">Contact name</label>
+<input type="text" class="contactName" id="contactName">
+</div>
+<div class="flexo">
+<label for="contactEmail">Email</label>
+<input type="email" class="contactEmail" id="contactEmail">    
+</div>
+<div class="flexo">
+<label for="contactMsg">Message</label>
+<textarea name="contact" id="contactMsg" cols="30" rows="10" class="contactMsg"></textarea>
+</div>
+<div class="contactBtn"><button id="contactBtn">Submit</button></div>
+</section>
+
+<script src="~/js/contact.js"></script>
