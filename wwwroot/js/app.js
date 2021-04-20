@@ -5,18 +5,8 @@ var myTasks = [];
 
 function toggleImportant() {
     if (important) {
-        // $("#iconImp").removeClass("fas").addClass("far");
-        // $("section#details").addClass("unimportant").removeClass("important");
-        // $("#btnSave")
-        //     .removeClass("important")
-        //     .html('Save Task <i class="far fa-check-circle"></i>');
         important = false;
     } else {
-        // $("#iconImp").removeClass("far").addClass("fas");
-        // $("section#details").addClass("important").removeClass("unimportant");
-        // $("#btnSave")
-        //     .addClass("important")
-        //     .html('Save Important Task<i class="far fa-check-circle"></i>');
         important = true;
     }
 }
@@ -35,8 +25,9 @@ function saveTask() {
     var dueDate = UI.dueDate.val();
     var location = UI.location.val();
     var alertText = UI.alertText.val();
-    var status = UI.selstatus.val();
-        important = $("input[type='radio']:checked").val();
+    var convertStatus = UI.selstatus.val();
+    var status = parseInt(convertStatus);
+        important = $("input[type='radio']:checked").val() == "true";
     
     var dateCheck = new Date(dueDate);
     var dateObject;
@@ -66,7 +57,7 @@ function saveTask() {
         }
     if (description.length < 20||description.length>220) {
         $("#msgFail").show();
-        $("input#txtLocation").addClass("inputFail").val("max 20 characters");
+        $("input#txtLocation").addClass("inputFail").val("min 20 max 220 char");
         setTimeout(function () {
             $("#msgFail").hide();
             $("input#txtLocation").removeClass("inputFail").val("");
@@ -149,7 +140,7 @@ function init() {
     UI.dueDate = $("#txtDueDate");
     UI.location = $("#txtLocation");
     UI.alertText = $("#txtAlert");
-    UI.selstatus = $("#selStatus")
+    UI.selstatus = $("#selStatus");
     //load data
     fetchTasks();
     //hook events
@@ -309,9 +300,29 @@ $("input#important").click(function(){
 $("input#notImportant").click(function(){
     $("section#details").addClass("unimportant").removeClass("important")
 })
-
+$("input").focus(function(){
+    $(this).prev('label').addClass('label-focus')
+});
+$("input").blur(function(){
+    $(this).prev('label').removeClass('label-focus')
+});
+$("select").focus(function(){
+    $(this).prev('label').addClass('label-focus')
+});
+$("select").blur(function(){
+    $(this).prev('label').removeClass('label-focus')
+});
+$("textarea").focus(function(){
+    $(this).prev('label').addClass('label-focus')
+});
+$("textarea").blur(function(){
+    $(this).prev('label').removeClass('label-focus')
+});
+$("input#txtDueDate").focus(function(){
+    $('label.fixPickerLabel').addClass('label-focus')
+});
+$("input#txtDueDate").blur(function(){
+    $('label.fixPickerLabel').removeClass('label-focus')
+});
 
 window.onload = init;
-
-// URL: '/api/delTask/id'
-// type: DELETE

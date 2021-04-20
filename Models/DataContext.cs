@@ -18,6 +18,7 @@ namespace FSDI_107_TaskManager.Models
 
         //which of my models should become tables inside of the DataBase
         public DbSet<Task> Tasks {get;set;}
+        public DbSet<ContactMsg> Messages {get;set;}
 
     }
 }

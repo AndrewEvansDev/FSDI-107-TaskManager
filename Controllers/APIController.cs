@@ -32,7 +32,7 @@ namespace taskManager.Controllers
         public IActionResult GetTasks()
         {
             var list = dbContext.Tasks.ToList();
-            return Json(data);
+            return Json(list);
         }
         [HttpDelete]
         public IActionResult DelTask(int id)
@@ -47,6 +47,14 @@ namespace taskManager.Controllers
             dbContext.Tasks.Remove(t);
             dbContext.SaveChanges();
             return Ok();
+        }
+        [HttpPost]
+        public IActionResult SaveMsg([FromBody] ContactMsg newContactMsg)
+        {
+            dbContext.Messages.Add(newContactMsg);
+            dbContext.SaveChanges();
+            return Json(newContactMsg);
+
         }
     }
 }

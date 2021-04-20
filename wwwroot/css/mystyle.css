@@ -25,13 +25,14 @@ body{
     height:11vh;
 }
 a.navbar-brand{
-    padding: 1rem 1rem 1rem 0;
+    padding: 1.5rem 1rem 1rem 0;
     font-weight:700;
     font-size:1.4rem;
 }
 a.nav-link{
     padding:1rem;
     font-weight:400;
+    font-size:1.3rem;
 }
 .headerflex{
     display:flex;
@@ -342,4 +343,16 @@ label.fixPickerLabel{
 }
 input{
     border-top-left-radius: 0;
+}
+.label-focus{
+    background-color:#ff2052;
+    animation-name:label-focus;
+    animation-duration: .2s;
+}
+@keyframes label-focus{
+    0%{margin-left:0}
+    25%{margin-left:.15rem}
+    50%{margin-left:.3rem}
+    75%{margin-left:.15rem}
+    100%{margin-left:0}
 }
