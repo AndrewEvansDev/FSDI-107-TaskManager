@@ -123,11 +123,16 @@ function fetchTasks() {
         type: "GET",
         url: "/API/getTasks",
         success: function (res) {
+            /*I added this in to fix an error on the console, not sure if it's needed.
+            I actually think the null value is the problem...
+            */
+            if(res != null){
             for (let i = 0; i < res.length; i++) {
                 let task = res[i];
                 if (task.user === "AndrewEvans") {
                     displayTask(task);
                     myTasks.push(task);
+                }
                 }
             }
         },

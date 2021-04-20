@@ -318,17 +318,28 @@ div.iconExpand{
     justify-content: space-between;
 }
 
-.spinner {
-    transform-box: fill-box;
-    animation: spin 2s linear infinite;
-    transform-origin:50% 50%;
-}
-
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% {  transform: rotate(359deg); }
-}
 .border-fix{
     border-top:none;
+}
+.status{
+    flex:1;
+    width:100%;
+    height: 3rem;
+    border-radius:5px;
+    margin-bottom:3rem;
+}
+.label{
+    font-weight:600;
+    background-color:var(--bg-color);
+    padding:.3rem 1rem 0rem 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom:0;
+}
+label.fixPickerLabel{
+    margin-bottom:.15 rem;
+    margin-left:-.2rem;
+}
+input{
+    border-top-left-radius: 0;
 }

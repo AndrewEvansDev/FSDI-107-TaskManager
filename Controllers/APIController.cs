@@ -34,18 +34,19 @@ namespace taskManager.Controllers
             var list = dbContext.Tasks.ToList();
             return Json(data);
         }
-        // [HttpDelete]
-        // public IActionResult DelTask(int id)
-        // {
-        //     // find the task
-        //     Task t = dbContext.Tasks.Find(id);
+        [HttpDelete]
+        public IActionResult DelTask(int id)
+        {
+            // find the task
+            Task t = dbContext.Tasks.Find(id);
 
-        //     if(t == null)
-        //     {
-        //         return NotFound();
-        //     }
-        //     dbContext.Tasks.Remove(t);
-        //     dbContext.SaveChanges();
-        // }
+            if(t == null)
+            {
+                return NotFound();
+            }
+            dbContext.Tasks.Remove(t);
+            dbContext.SaveChanges();
+            return Ok();
+        }
     }
 }

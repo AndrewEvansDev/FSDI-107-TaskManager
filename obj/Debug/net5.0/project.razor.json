@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/FSDI-107-TaskManager.csproj",
+  "FilePath": "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/FSDI-107-TaskManager.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,53 +15619,53 @@
   "RootNamespace": "FSDI_107_TaskManager",
   "Documents": [
     {
-      "FilePath": "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/Views/Home/Tasks.cshtml",
-      "TargetPath": "Views\\Home\\Tasks.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/Views/_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "FilePath": "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/Views/_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/Views/Home/About.cshtml",
+      "FilePath": "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/Views/Home/About.cshtml",
       "TargetPath": "Views\\Home\\About.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/Views/Home/Privacy.cshtml",
+      "FilePath": "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/Views/Home/Tasks.cshtml",
+      "TargetPath": "Views\\Home\\Tasks.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/Views/Home/Contact.cshtml",
+      "TargetPath": "Views\\Home\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/Views/Home/Contact.cshtml",
-      "TargetPath": "Views\\Home\\Contact.cshtml",
+      "FilePath": "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],

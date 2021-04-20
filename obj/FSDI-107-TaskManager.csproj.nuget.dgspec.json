@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/FSDI-107-TaskManager.csproj": {}
+    "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/FSDI-107-TaskManager.csproj": {}
   },
   "projects": {
-    "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/FSDI-107-TaskManager.csproj": {
+    "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/FSDI-107-TaskManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/FSDI-107-TaskManager.csproj",
+        "projectUniqueName": "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/FSDI-107-TaskManager.csproj",
         "projectName": "FSDI-107-TaskManager",
-        "projectPath": "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/FSDI-107-TaskManager.csproj",
+        "projectPath": "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/FSDI-107-TaskManager.csproj",
         "packagesPath": "/Users/andrew/.nuget/packages/",
-        "outputPath": "/Users/andrew/Desktop/Dev Files/FSDI-107-TaskManager/obj/",
+        "outputPath": "/Users/andrew/Documents/Dev Files/FSDI-107-TaskManager/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/andrew/.nuget/NuGet/NuGet.Config"
