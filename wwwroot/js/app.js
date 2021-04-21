@@ -133,6 +133,7 @@ function fetchTasks() {
     });
 }
 
+
 function init() {
     UI.id = $("#txtId");
     UI.title = $("#txtTitle");
@@ -300,10 +301,10 @@ $("input#important").click(function(){
 $("input#notImportant").click(function(){
     $("section#details").addClass("unimportant").removeClass("important")
 })
-$("input").focus(function(){
+$("input.form-control").focus(function(){
     $(this).prev('label').addClass('label-focus')
 });
-$("input").blur(function(){
+$("input.form-control").blur(function(){
     $(this).prev('label').removeClass('label-focus')
 });
 $("select").focus(function(){
@@ -324,5 +325,7 @@ $("input#txtDueDate").focus(function(){
 $("input#txtDueDate").blur(function(){
     $('label.fixPickerLabel').removeClass('label-focus')
 });
+
+
 
 window.onload = init;

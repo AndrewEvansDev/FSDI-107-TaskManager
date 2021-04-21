@@ -1,20 +1,23 @@
 @{
     ViewData["Title"] = "Contact";
 }
-<h1>@ViewData["Title"]</h1>
+
 
 <section class="contactWrap">
+<h1>@ViewData["Title"]</h1>    
 <div class="flexo">
-<label for="contactName">Contact name</label>
+<label for="contactName">Name</label>
 <input type="text" class="contactName" id="contactName">
+<p class="rejectName">Enter contact name.</p>
 </div>
 <div class="flexo">
 <label for="contactEmail">Email</label>
-<input type="email" class="contactEmail" id="contactEmail">    
+<input type="email" class="contactEmail" id="contactEmail">
+<p class="rejectEmail">Enter valid email.</p>    
 </div>
 <div class="flexo">
-<label for="contactMsg">Message</label>
-<textarea name="contactBody" id="contactBody" cols="30" rows="10" class="contactBody"></textarea>
+<textarea name="contactBody" id="contactBody" cols="30" rows="6" class="contactBody" placeholder="type message here"></textarea>
+<p class="rejectBody">If you don't have a message, why submit the form?</p>
 </div>
 <div class="contactBtn"><button id="contactBtn">Submit</button></div>
 </section>

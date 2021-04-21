@@ -54,7 +54,7 @@ namespace taskManager.Controllers
             dbContext.Messages.Add(newContactMsg);
             dbContext.SaveChanges();
             return Json(newContactMsg);
-
+            
         }
     }
 }

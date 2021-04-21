@@ -356,3 +356,60 @@ input{
     75%{margin-left:.15rem}
     100%{margin-left:0}
 }
+.contactWrap{
+    display:flex;
+    flex-direction: column;
+    margin-left:3rem;
+    margin-right:auto;
+    
+}
+.flexo{
+    margin-left:0;
+    margin-right:20rem;
+    flex:1;
+}
+.flexo label{
+    text-align: left;
+}
+
+input.contactName,input.contactEmail,textarea.contactBody{
+    border-radius:5px;
+}
+div.contactBtn{
+    margin-left:0;
+    margin-right:20rem;
+    flex:1;
+
+}
+button#contactBtn{
+    min-width:5rem;
+    height:2.2rem;
+    border-radius:5px;
+    color:var(--bg-color);
+    background-color: var(--txt-color);
+    font-size:1.4rem;
+}
+button#contactBtn:hover{
+    cursor:pointer;
+    filter:brightness(90%);
+    
+
+}
+textarea.contactBody{
+    margin-top:1rem;
+    padding:.5rem;
+}
+.contactWrap h1{
+    margin-top:1rem;
+    margin-bottom:1rem;
+    padding:1rem;
+}
+p.rejectName,p.rejectEmail,p.rejectBody{
+    color:red;
+    background-color:var(--txt-color);
+    width:fit-content;
+    padding:0 .5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    display:none;
+}
