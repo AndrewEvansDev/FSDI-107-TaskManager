@@ -44,6 +44,7 @@ function saveMsg(){
             console.log("Msg not sent", error);
         }
     })
+    clearContact();
 };
 function clearContact(){
     CUI.name.val("");

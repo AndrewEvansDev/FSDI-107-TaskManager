@@ -14,17 +14,11 @@ namespace taskManager.Controllers
         {
             dbContext = db;
         }
-
         [HttpPost]
         public IActionResult SaveTask([FromBody] Task theTask)
         {
-            System.Console.WriteLine("Save tasks called!");
-            System.Console.WriteLine(theTask.Title);
-
             dbContext.Tasks.Add(theTask);
             dbContext.SaveChanges();
-            
-            // return the obj
             return Json(theTask);
         }
 
@@ -37,7 +31,6 @@ namespace taskManager.Controllers
         [HttpDelete]
         public IActionResult DelTask(int id)
         {
-            // find the task
             Task t = dbContext.Tasks.Find(id);
 
             if(t == null)
